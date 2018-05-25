@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <testEnv>prod</testEnv>
+    <dataSettings>
+        <redis>
+            <host>10.213.42.130</host>
+            <port>10001</port>
+        </redis>
+        <mysql>
+            <url>jdbc:mysql://10.209.44.12:10043/testassistdb?useUnicode=true&amp;characterEncoding=utf8</url>
+            <user>testassistdb</user>
+            <password>9EJ9W0vv0mr7</password>
+        </mysql>
+        <rabbitMQ>
+            <host>10.213.42.44</host>
+            <port>10001</port>
+            <user>liqianyang</user>
+            <password>feifan123</password>
+        </rabbitMQ>
+        <dataSource>redis</dataSource>
+    </dataSettings>
+</root>

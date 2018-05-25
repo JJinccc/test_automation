@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="接口自动化测试" verbose="1" preserve-order="true" parallel="false">
+	<test name="自动化测试用例">
+		<groups>
+			<run>
+				<include name="Online"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.coupon.toC.CCouponListTests"></class>
+			<class name="tests.basicInfo.toC.CBasicInfoTests"></class>
+			<class name="tests.coupon.CouponE2ETests"></class>
+			<class name="tests.members.BMemberAmountAnalyseTests"></class>
+			<class name="tests.members.BMemberConsumeAnalysis"></class>
+			<class name="tests.members.BMemberDealFlowTests"></class>
+			<class name="tests.members.BMemberExpandingAnalyseTests"></class>
+			<class name="tests.members.BMemberHomePageTests"></class>
+			<class name="tests.members.BMemberQueryTests"></class>
+			<class name="tests.members.BMemberStructureAnalyseTests"></class>
+			<class name="tests.members.BMemberDataCompareTests"></class>
+			<class name="tests.coupon.toC.CAggregationCouponTests"></class>
+		</classes>
+	</test>
+	<listeners>	
+		<!--<listener class-name="com.sen.api.listeners.AutoTestListener"></listener>-->
+		<!--<listener class-name="com.sen.api.listeners.RetryListener"></listener>-->
+		<!-- ReportNg 报告  -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+		<!-- ExtentReport 报告  -->
+		<listener class-name="com.ffan.qa.listeners.ExtentTestNGIReporterListener"></listener>
+	</listeners>
+</suite> 
